@@ -38,9 +38,16 @@
     </header>
 
     <main>
-        @yield('content')
+        <div class="conatiner-fluid">
+            <div class="row">
+                @if(session('msg'))
+                    <p class="msg"> {{session('msg')}} </p>
+                @endif
+                @yield('content')
+            </div>
+        </div>
     </main>
-    
+
     <footer>
         <p>HDC Events &copy; 2022</p>
     </footer>
