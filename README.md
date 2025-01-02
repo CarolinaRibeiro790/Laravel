@@ -8,3 +8,6 @@
 
 ### Criar Evento
 ![image](https://github.com/user-attachments/assets/7d809b23-86c3-4cf2-aae2-cdae4398ab64)
+
+### Saiba mais 
+![image](https://github.com/user-attachments/assets/c2614c1b-58d5-4e43-988a-5148ce3540ca)
