@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Models;
+use Carbon\Carbon;
 
 use GuzzleHttp\Psr7\Request;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -18,9 +19,12 @@ class Event extends Model
 
     protected $guarded = [];
 
-    public function user()
-    {
+    public function user(){
         return $this->belongsTo('App\Models\User');
+    }
+
+    public function users(){
+        return $this->belongsToMany('App\Models\User');
     }
 
 }

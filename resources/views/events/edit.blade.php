@@ -11,7 +11,7 @@
         @method('PUT')
         <div class="form-group pb-4">
             <label for="image">Imagem do Evento:</label>
-            <input type="file" id="image" name="image" class="from-control-file">
+            <input type="file" id="image" name="image" class="form-control-file">
             <img src="/img/events/{{$event->image}}" alt="{{$event->title}}" class="img-preview">
         </div>
 

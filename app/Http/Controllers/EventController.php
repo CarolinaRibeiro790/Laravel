@@ -107,7 +107,8 @@ class EventController extends Controller
     }
 
 
-    public function update(Request $request){
+    public function update(Request $request)
+    {
 
         $data = $request->all();
 
@@ -133,4 +134,31 @@ class EventController extends Controller
         return redirect('/dashboard')->with('msg', 'Evento editado com sucesso!');
     }
 
+    
+    public function joinEvent($id)
+    {
+        $user = auth()->user(); // Atribui o usuário autenticado corretamente
+    
+        if ($user) {
+            $user->eventsAsParticipant()->attach($id); // Vincula o usuário ao evento
+    
+            $event = Event::findOrFail($id);
+    
+            return redirect('/dashboard')->with('msg', 'Sua presença está confirmada no evento ' . $event->title);
+        } else {
+            return redirect('/login')->with('msg', 'Por favor, faça login para participar do evento.');
+        }
+    }
+    
+
+
+    // public function joinEvent($id)
+    // {
+    //     $user = auth()->user();
+    //     $user->eventsAsParticipant()->attach($id);
+
+    //     $event =  Event::findOrFail($id);
+
+    //     return redirect('/dashboard')->with('msg', 'Sua presença está confirmada no evento ' . $event->title);
+    // }
 }

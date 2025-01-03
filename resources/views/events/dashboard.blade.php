@@ -22,7 +22,7 @@
         <tbody>
             @foreach($events as $event)
                 <tr>
-                    <td scropt="row"> {{ $loop->index + 1}} </td>
+                    <td scope="row"> {{ $loop->index + 1}} </td>
                     <td><a href="/events/{{ $event->id}}">{{$event->title}}</a></td>
                     <td>0</td>
                     <td>

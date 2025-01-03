@@ -4,65 +4,69 @@
 
 @section('content')
 
-<div id="event-create-container" class="col-md-6 offset-md-3 ">
+<div id="event-create-container" class="col-md-6 offset-md-3">
     <h1>Crie o seu evento</h1>
     <form action="/events" method="POST" enctype="multipart/form-data">
         @csrf
 
         <div class="form-group pb-4">
             <label for="image">Imagem do Evento:</label>
-            <input type="file" id="image" name="image" class="from-control-file">
+            <input type="file" id="image" name="image" class="form-control-file">
         </div>
 
         <div class="form-group pb-4">
-            <label for="title">Data do Evento:</label>
+            <label for="title">Nome do Evento:</label>
             <input type="text" class="form-control" id="title" name="title" placeholder="Nome do evento">
         </div>
 
         <div class="form-group pb-4">
-            <label for="date">Evento:</label>
+            <label for="date">Data do Evento:</label>
             <input type="date" class="form-control" id="date" name="date">
         </div>
 
         <div class="form-group pb-4">
-            <label for="title">Cidade:</label>
-            <input type="city" class="form-control" id="title" name="city" placeholder="Local do evento">
+            <label for="city">Cidade:</label>
+            <input type="text" class="form-control" id="city" name="city" placeholder="Local do evento">
         </div>
 
         <div class="form-group pb-4">
-            <label for="title">O evento é privado?</label>
+            <label for="private">O evento é privado?</label>
             <select name="private" id="private" class="form-control">
-                <option value="0">Nao</option>
+                <option value="0">Não</option>
                 <option value="1">Sim</option>
             </select>
         </div>
 
         <div class="form-group pb-4">
-            <label for="title">Descrição:</label>
+            <label for="description">Descrição:</label>
             <textarea name="description" id="description" class="form-control" placeholder="O que vai acontecer no evento?"></textarea>
         </div>
 
-
         <div class="form-group pb-4">
-            <label for="title">Adicione itens de infraestrutura:</label>
-            <div class="from-group">
-                <input type="checkbox" name="items[]" value="Cadeiras"> Cadeiras
+            <label for="items">Adicione itens de infraestrutura:</label>
+            <div class="form-check">
+                <input type="checkbox" name="items[]" value="Cadeiras" id="item-1" class="form-check-input">
+                <label for="item-1" class="form-check-label">Cadeiras</label>
             </div>
 
-            <div class="from-group">
-                <input type="checkbox" name="items[]" value="Palco"> Palco
+            <div class="form-check">
+                <input type="checkbox" name="items[]" value="Palco" id="item-2" class="form-check-input">
+                <label for="item-2" class="form-check-label">Palco</label>
             </div>
 
-            <div class="from-group">
-                <input type="checkbox" name="items[]" value="Cerveja grátis"> Cerveja grátis
+            <div class="form-check">
+                <input type="checkbox" name="items[]" value="Cerveja grátis" id="item-3" class="form-check-input">
+                <label for="item-3" class="form-check-label">Cerveja grátis</label>
             </div>
 
-            <div class="from-group">
-                <input type="checkbox" name="items[]" value="Open food"> Open food
+            <div class="form-check">
+                <input type="checkbox" name="items[]" value="Open food" id="item-4" class="form-check-input">
+                <label for="item-4" class="form-check-label">Open food</label>
             </div>
 
-            <div class="from-group">
-                <input type="checkbox" name="items[]" value="Brindes"> Brindes
+            <div class="form-check">
+                <input type="checkbox" name="items[]" value="Brindes" id="item-5" class="form-check-input">
+                <label for="item-5" class="form-check-label">Brindes</label>
             </div>
         </div>
 
