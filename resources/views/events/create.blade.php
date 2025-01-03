@@ -11,12 +11,17 @@
 
         <div class="form-group pb-4">
             <label for="image">Imagem do Evento:</label>
-           <input type="file" id="image" name="image" class="from-control-file">
+            <input type="file" id="image" name="image" class="from-control-file">
         </div>
 
         <div class="form-group pb-4">
-            <label for="title">Evento:</label>
+            <label for="title">Data do Evento:</label>
             <input type="text" class="form-control" id="title" name="title" placeholder="Nome do evento">
+        </div>
+
+        <div class="form-group pb-4">
+            <label for="date">Evento:</label>
+            <input type="date" class="form-control" id="date" name="date">
         </div>
 
         <div class="form-group pb-4">
@@ -37,7 +42,7 @@
             <textarea name="description" id="description" class="form-control" placeholder="O que vai acontecer no evento?"></textarea>
         </div>
 
-        
+
         <div class="form-group pb-4">
             <label for="title">Adicione itens de infraestrutura:</label>
             <div class="from-group">
