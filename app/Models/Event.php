@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use GuzzleHttp\Psr7\Request;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -15,7 +16,11 @@ class Event extends Model
 
     protected $dates = ['date'];
 
-    public function user(){
+    protected $guarded = [];
+
+    public function user()
+    {
         return $this->belongsTo('App\Models\User');
     }
+
 }
