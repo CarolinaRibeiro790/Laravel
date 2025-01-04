@@ -5,10 +5,10 @@
 
 Este é um projeto desenvolvido com Laravel, utilizando as melhores práticas e conceitos aprendidos no curso Hora de Codar com o instrutor Matheus Battisti.
 
-## Sobre o Projeto
+## 🚀 Sobre o Projeto
 O objetivo deste projeto é fornecer uma aplicação de gerenciamento de dados com autenticação de usuários, interação com o banco de dados e funcionalidades essenciais de CRUD (Create, Read, Update, Delete). Utilizando Laravel como framework, o projeto conta com recursos como autenticação, relações entre modelos, salvamento de imagens e JSON, além de funcionalidades de busca e validações.
 
-## 🚀 Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 <li>Laravel: Framework PHP robusto e eficiente.
 <li>MySQL: Banco de dados utilizado para armazenar informações.
 <li>Blade: Motor de templates do Laravel.
@@ -21,7 +21,7 @@ O objetivo deste projeto é fornecer uma aplicação de gerenciamento de dados c
 <li>Relações de Modelos: Implementação de relações one-to-many e many-to-many.
 <li>Busca e Filtros: Ferramentas de pesquisa avançada para encontrar registros no banco. <br>
     
-## Funcionalidades Principais
+## 📝 Funcionalidades Principais
 
 <li>Autenticação de Usuários: Sistema de login e registro de usuários com autenticação segura.
 <li>CRUD de Dados: Criar, Ler, Atualizar e Deletar registros no banco de dados.
@@ -46,7 +46,7 @@ O objetivo deste projeto é fornecer uma aplicação de gerenciamento de dados c
 ### Ver o evento
 ![image](https://github.com/user-attachments/assets/210f5a9b-89e3-4c0b-99da-215e434bcd92)
 
-## Como Rodar o Projeto
+## 📦 Como Rodar o Projeto
 1. Instale as dependências:
 `composer install`
 
